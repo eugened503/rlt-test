@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "imageName": "green",
+    "sum": 4,
+    "presence": true
+  },
+  {
+    "id": 2,
+    "imageName": "brown",
+    "sum": 2,
+    "presence": true
+  },
+  {
+    "id": 3,
+    "imageName": "violet",
+    "sum": 5,
+    "presence": true
+  },
+  {
+    "id": 4,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 5,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 6,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 7,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 8,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 9,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 10,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 11,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 12,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 13,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 14,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 15,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 16,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 17,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 18,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 19,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 20,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 21,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 22,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 23,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 24,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  },
+  {
+    "id": 25,
+    "imageName": null,
+    "sum": null,
+    "presence": false
+  }
+]

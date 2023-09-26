@@ -106,7 +106,6 @@ const num = ref(null)
   .main-button {
     margin: 18px 0 0;
   }
-
   .enter-data {
     position: absolute;
     bottom: 0;

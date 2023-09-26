@@ -1,29 +1,18 @@
-# vue-template
 
-This template should help get you started developing with Vue 3 in Vite.
+# Тестовое задание для компании «RLT»
 
-## Recommended IDE Setup
+## Задача
+Необходимо реализовать веб-приложение - автономно работающий инвентарь, т.е. после закрытия браузера предметы и их позиции должны быть сохранены. По нажатию на предмет инвентаря должна выезжать плашка с его описанием и кнопкой удалить.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Cтек
++ Vue
++ Pinia
++ Vuedraggable
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Развертывание проекта
+- Скопируйте репозиторий
+    - `https://github.com/eugened503/rlt-test.git`
+- Установите пакеты
+     - `npm install`
+- Запустите версию для разработки (ее можно увидеть на локальном сервере)
+    - `npm run dev`

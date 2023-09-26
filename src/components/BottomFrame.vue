@@ -1,7 +1,7 @@
 <template>
   <div class="bottom-frame">
     <div class="skeleton skeleton-animation"></div>
-    <button></button>
+    <button class="close-button"></button>
   </div>
 </template>
 
@@ -21,16 +21,10 @@
     border-radius: 12px;
     height: 36px;
   }
-
-  button {
+  .close-button {
     position: absolute;
     top: 14px;
     right: 14px;
-    width: 12px;
-    height: 12px;
-    background-image: url('/images/cross.svg');
-    border: none;
-    background-color: transparent;
   }
 }
 </style>

@@ -1,59 +1,33 @@
 <template>
   <draggable
     class="inventory"
-    v-model="items"
+    v-model="getInventory"
     handle=".inventory__item:not(.empty)"
     item-key="id"
     :move="handleMove"
     @end="handleDragEnd"
   >
     <template #item="{ element: item }">
-      <div class="inventory__item" :class="{ empty: !item.presence }" :key="item.id">
-        <img v-if="item.imageName" :src="`/images/${item.imageName}.png`" />
-        <p class="inventory__sum" v-if="item.sum">{{ item.sum }}</p>
+      <div
+        class="inventory__item"
+        :class="{ empty: !item.presence }"
+        :key="item.id"
+        @click="handleItem(item)"
+      >
+        <img v-if="item.imageName" :src="`/images/${item.imageName}.png`" alt="image" />
+        <p class="inventory__sum" v-if="typeof item.sum === 'number'">{{ item.sum }}</p>
       </div>
     </template>
   </draggable>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
 import draggable from 'vuedraggable'
-import inventory from '@/data/inventory.json'
+import { useStoreInventory } from '../stores/storeInventory'
+import { storeToRefs } from 'pinia'
 
-const items = ref(inventory)
-
-const futureItem = ref(null)
-const movingItem = ref(null)
-const isFutureIndex = ref(null)
-const movingIndex = ref(null)
-
-function handleDragEnd() {
-  futureItem.value = items.value[isFutureIndex.value]
-  movingItem.value = items.value[movingIndex.value]
-  const itemsCopy = Object.assign([], items.value)
-  itemsCopy[isFutureIndex.value] = movingItem.value
-  itemsCopy[movingIndex.value] = futureItem.value
-
-  items.value = itemsCopy
-}
-
-function handleMove(e) {
-  const { index, futureIndex } = e.draggedContext
-  movingIndex.value = index
-  isFutureIndex.value = futureIndex
-  return false
-}
-
-onMounted(() => {
-  if (localStorage.items) {
-    items.value = JSON.parse(localStorage.items)
-  }
-})
-
-watch(items, (newItems) => {
-  localStorage.items = JSON.stringify(newItems)
-})
+const { handleDragEnd, handleMove, handleItem } = useStoreInventory()
+const { getInventory } = storeToRefs(useStoreInventory())
 </script>
 
 <style lang="scss" scoped>

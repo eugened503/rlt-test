@@ -19,10 +19,10 @@
 
 <style lang="scss" scoped>
 .left-frame {
-  background-color: #262626;
+  background-color: $clr-signal-black;
   padding: 18px 14px 24px;
   border-radius: 12px;
-  border: 1px solid #4c4c4c;
+  border: 1px solid $clr-tarpaulin-grey;
 
   &__image {
     display: block;

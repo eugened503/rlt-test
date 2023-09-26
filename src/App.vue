@@ -30,7 +30,7 @@ onMounted(() => {
 .inventory-wrapper {
   position: relative;
   padding: 32px;
-  background-color: rgba(29, 29, 29, 1);
+  background-color: $clr-black;
   width: 849px;
   overflow: hidden;
 

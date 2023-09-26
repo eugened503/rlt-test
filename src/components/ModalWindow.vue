@@ -45,8 +45,8 @@ const num = ref(null)
   width: 250px;
   min-height: 500px;
   padding: 15px 15px 18px;
-  background-color: #262626;
-  border: 1px solid #4c4c4c;
+  background-color: $clr-signal-black;
+  border: 1px solid $clr-tarpaulin-grey;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   animation: showRight 2s;
@@ -69,8 +69,8 @@ const num = ref(null)
   .skeletons {
     margin: 30px 0 0;
     padding: 16px 0 24px;
-    border-top: 1px solid #4c4c4c;
-    border-bottom: 1px solid #4c4c4c;
+    border-top: 1px solid $clr-tarpaulin-grey;
+    border-bottom: 1px solid $clr-tarpaulin-grey;
 
     &__item {
       height: 10px;
@@ -110,18 +110,18 @@ const num = ref(null)
   .enter-data {
     position: absolute;
     bottom: 0;
-    border-top: 1px solid #4c4c4c;
+    border-top: 1px solid $clr-tarpaulin-grey;
     z-index: 1;
     width: 100%;
-    background-color: #262626;
+    background-color: $clr-signal-black;
     padding: 20px 0 0;
 
     input {
       padding: 12px;
       width: 100%;
-      background-color: #262626;
-      color: rgba(255, 255, 255, 1);
-      border: 1px solid #4c4c4c;
+      background-color: $clr-signal-black;
+      color: $clr-white;
+      border: 1px solid $clr-tarpaulin-grey;
       font-family: Inter;
       font-size: 14px;
       font-weight: 500;
@@ -145,7 +145,7 @@ const num = ref(null)
       .main-button {
         &:first-child {
           max-width: 88px;
-          background-color: rgba(255, 255, 255, 1);
+          background-color: $clr-white;
           color: rgba(45, 45, 45, 1);
         }
       }

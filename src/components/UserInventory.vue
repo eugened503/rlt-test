@@ -41,7 +41,7 @@ const { getInventory } = storeToRefs(useStoreInventory())
   &__item {
     width: 20%;
     min-height: 20%;
-    border: 1px solid #4c4c4c;
+    border: 1px solid $clr-tarpaulin-grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +84,7 @@ const { getInventory } = storeToRefs(useStoreInventory())
     color: #7d7d7d;
     border-width: 1px 1px 0 1px;
     border-style: solid;
-    border-color: #4c4c4c;
+    border-color: $clr-tarpaulin-grey;
     border-top-left-radius: 6px;
   }
 }

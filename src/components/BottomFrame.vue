@@ -12,8 +12,8 @@
   position: relative;
   padding: 18px;
   margin: 24px 0 0;
-  background-color: #262626;
-  border: 1px solid #4c4c4c;
+  background-color: $clr-signal-black;
+  border: 1px solid $clr-tarpaulin-grey;
   border-radius: 12px;
 
   .skeleton {
